@@ -20,7 +20,7 @@ export default function App() {
     setLoading(true);
     try {
       const res = await axios.get(
-        `http://localhost:3000/api/v1/search?q=${val}&limit=6`,
+        `https://villages-api-backend.vercel.app/api/v1/search?q=${val}&limit=6`,
         {
           headers: { "X-API-Key": API_KEY },
         },
@@ -51,7 +51,6 @@ export default function App() {
         padding: "20px",
       }}
     >
-      {/* Header */}
       <div style={{ textAlign: "center", marginBottom: "40px" }}>
         <div
           style={{
@@ -85,7 +84,6 @@ export default function App() {
         </p>
       </div>
 
-      {/* Search Card */}
       <div
         style={{
           width: "100%",
