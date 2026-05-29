@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #0d1117;
+  font-family: "Inter", sans-serif;
+}
+input::placeholder {
+  color: #4b5563;
+}
+input:focus {
+  outline: none;
+  border-color: rgba(74, 222, 128, 0.5) !important;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.1);
+}
